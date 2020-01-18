@@ -6,13 +6,13 @@
 ### How to run
 
 ```
-make build run
+make 
 ```
 
-### How to use
+### How to test
 
 ```
-curl -s "http://localhost:80/ping?name=vison"
+make test
 ```
 
 ## Resources
