@@ -16,6 +16,7 @@ LABEL maintainer="Vison Li <kk801030@gmail.com>"
 # RUN go mod download
 
 RUN go get github.com/gin-gonic/gin
+RUN go get github.com/stretchr/testify/assert
 
 # Copy the source from the current directory to the Working Directory inside the container
 COPY . .

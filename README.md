@@ -15,6 +15,16 @@ make
 make test
 ```
 
+### How to call APIs
+
+```
+curl -s -o /dev/null -w %{http_code} "http://localhost/health-check"
+```
+
+```
+curl -s "http://localhost:/user/vison"
+```
+
 ## Resources
 
 ### Docker 
