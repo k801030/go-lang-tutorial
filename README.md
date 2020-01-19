@@ -1,5 +1,8 @@
 # go-lang-tutorial
 
+## Workflow
+
+![](https://github.com/k801030/go-lang-tutorial/workflows/Go/badge.svg)
 
 ## Some Commands
 

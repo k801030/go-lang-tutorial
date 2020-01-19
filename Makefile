@@ -6,7 +6,7 @@ export CONTAINER_NAME=go-tutorial
 all: stop test build run
 
 test:
-	go test -v ./pkg
+	go test -v ./web
 
 build:
 	docker build -t ${IMGAE_NAME} .
