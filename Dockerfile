@@ -22,7 +22,7 @@ RUN go get github.com/stretchr/testify/assert
 COPY . .
 
 # Build the Go app
-RUN go build -o server .
+RUN go build -o server ./web
 
 # Expose port 8080 to the outside world
 EXPOSE 8080
