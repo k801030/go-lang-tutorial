@@ -1,4 +1,4 @@
-HTTP_CODE=$(curl -s -o /tmp/server.log -w %{http_code} "http://localhost:80/health-check")
+HTTP_CODE=$(curl -s -o /tmp/server.log -w %{http_code} "http://localhost:80/123health-check")
 
 if [ $HTTP_CODE -eq 200 ]; then
   echo "ok"
