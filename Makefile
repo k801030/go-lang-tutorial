@@ -14,4 +14,4 @@ build:
 
 run:
 	docker run -d -p 80:8080 --name ${CONTAINER_NAME} --rm ${IMGAE_NAME}
-	./health-check.sh
+	scripts/health-check.sh
