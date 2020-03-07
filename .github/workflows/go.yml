@@ -40,6 +40,6 @@ jobs:
       run: make run
 
     - name: Publish to ECS
-      if: github.event_name == 'pull_request'
-      run: make publish-to-ecs
+      if: github.event_name == 'push'
+      run: make publish-to-ecr
 
