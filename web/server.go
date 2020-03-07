@@ -48,7 +48,7 @@ func GetUserNameHandler(c *gin.Context) {
 
 func main() {
 	router := setupRouter()
-	router.Run() // 8080 by default
+	router.Run(":80")
 }
 
 func getCurrentDate() string {

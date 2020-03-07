@@ -9,7 +9,7 @@
 ### How to run
 
 ```
-make 
+make
 ```
 
 ### How to test
@@ -30,12 +30,11 @@ curl -s "http://localhost:/user/vison"
 
 ## Resources
 
-### Docker 
+### Docker
 
-* [快速建立你的第一個Docker服務](https://joshhu.gitbooks.io/dockercommands/content/Containers/DockerRun.html)
-* [Deploying Go servers with Docker](https://blog.golang.org/docker)
-
+- [快速建立你的第一個Docker服務](https://joshhu.gitbooks.io/dockercommands/content/Containers/DockerRun.html)
+- [Deploying Go servers with Docker](https://blog.golang.org/docker)
 
 ### Web Framework
 
-* [Gin | Gin is a HTTP web framework written in Go (Golang)](https://github.com/gin-gonic/gin)
+- [Gin | Gin is a HTTP web framework written in Go (Golang)](https://github.com/gin-gonic/gin)
