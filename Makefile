@@ -20,6 +20,8 @@ clean:
 	docker ps -q --filter "name=${CONTAINER_NAME}" | grep -q . && docker stop ${CONTAINER_NAME} || echo "no container found"
 
 publish-to-ecr:
-	aws ecr get-login-password --region ap-northeast-1 --profile mac | docker login --username AWS --password-stdin ${ECR}
+	export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+	export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+	aws ecr get-login-password --region ap-northeast-1 | docker login --username AWS --password-stdin ${ECR}
 	docker tag ${IMAGE_NAME}:latest ${ECR}:latest
 	docker push ${ECR}:latest
