@@ -7,16 +7,13 @@ FROM golang:latest
 LABEL maintainer="Vison Li <kk801030@gmail.com>"
 
 # Set the Current Working Directory inside the container
-# WORKDIR /app
+WORKDIR /app
 
 # Copy go mod and sum files
-# COPY go.mod go.sum ./
+COPY go.mod go.sum ./
 
 # Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed
-# RUN go mod download
-
-RUN go get github.com/gin-gonic/gin
-RUN go get github.com/stretchr/testify/assert
+RUN go mod download
 
 # Copy the source from the current directory to the Working Directory inside the container
 COPY . .

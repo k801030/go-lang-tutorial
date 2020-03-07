@@ -3,7 +3,7 @@ export CONTAINER_NAME=go-tutorial
 
 .PHONY: all test build run clean
 
-all: stop test build run
+all: clean test build run
 
 test:
 	go test -v ./web
